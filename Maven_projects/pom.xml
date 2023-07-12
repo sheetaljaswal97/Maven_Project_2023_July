@@ -6,6 +6,10 @@
 
 	<dependencies>
 
+
+<!-- https://mvnrepository.com/artifact/org.jenkins-ci.main/maven-plugin -->
+
+
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -19,6 +23,10 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+		
+	<!-- https://mvnrepository.com/artifact/org.jenkins-ci.main/maven-plugin -->
+
+
 
 
 	</dependencies>
@@ -41,7 +49,7 @@
 				<version>3.1.2</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>${xmlSuiteFileName}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
